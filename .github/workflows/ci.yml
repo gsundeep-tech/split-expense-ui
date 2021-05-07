@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ development ]
+    branches: [development]
   pull_request:
-    branches: [ development ]
+    branches: [development]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,9 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Echo GITHUB_WORSPACE
         run: echo $GITHUB_WORKSPACE
-        
+
       - name: unit tests checks
-        run: cd $GITHUB_WORKSPACE/split_expenses_ui && npm i && npm run test
+        run: cd $GITHUB_WORKSPACE && npm i && npm run test
 
       - name: linting checks
-        run: cd $GITHUB_WORKSPACE/split_expenses_ui && npm run lint
+        run: cd $GITHUB_WORKSPACE && npm run lint
