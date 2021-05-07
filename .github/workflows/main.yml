@@ -30,7 +30,7 @@ jobs:
         run: echo $GITHUB_WORKSPACE
         
       - name: unit tests checks
-        run: cd $GITHUB_WORKSPACE/split-expenses-ui && npm i && npm run test
+        run: cd $GITHUB_WORKSPACE/split_expenses_ui && npm i && npm run test
 
       - name: linting checks
-        run: cd $GITHUB_WORKSPACE/split-expenses-ui && npm run lint
+        run: cd $GITHUB_WORKSPACE/split_expenses_ui && npm run lint
