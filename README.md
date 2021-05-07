@@ -19,9 +19,9 @@ The front project was created with [Create React App](https://reactjs.org/docs/c
 
    `git clone https://github.com/gsundeep-tech/split-expense.git`
 
-2. Navigate to split_expenses_ui folder
+2. Navigate to split-expenses-ui folder
 
-   `cd split_expenses_ui`
+   `cd split-expenses-ui`
 
 3. Install dependencies by running below command.
 
