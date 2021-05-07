@@ -31,6 +31,9 @@ class QuickExpense extends Component {
 
   fetchUsers = async () => {
     const users = await getUsers();
+    if (!users) {
+      console.log('Connection Error; Not able to fetch users');
+    }
     for (let i = 0; i < users.length; i++) {
       users[i]['total'] = 0;
       users[i]['net_amount'] = 0;
