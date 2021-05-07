@@ -87,6 +87,7 @@ class QuickExpense extends Component {
   };
 
   componentDidMount = () => {
+    console.log(process.env);
     this.fetchUsers();
   };
 
