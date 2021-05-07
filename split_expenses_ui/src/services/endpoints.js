@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:5000/api/';
+const baseURL = process.env.SPLIT_EXPENSES_API ? process.env.SPLIT_EXPENSES_API : 'http://localhost:5000/api/';
 
 const config = {
   baseUsersURL: baseURL + 'user',
