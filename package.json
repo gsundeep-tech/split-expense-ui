@@ -10,7 +10,7 @@
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "eslint --ext .jsx,.js ./src",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "npm run lint -- --fix"
   },
   "eslintConfig": {
     "plugins": [
