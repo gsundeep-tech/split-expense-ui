@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run cssx && react-scripts start",
+    "build": "npm run cssx && react-scripts build",
     "test": "craco test",
     "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "eslint --ext .jsx,.js ./src",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "cssx": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
   "eslintConfig": {
     "plugins": [
