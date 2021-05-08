@@ -40,4 +40,5 @@ jobs:
         env:
           # use HD prefix the env to differentitate from github action env to heroku deployment env
           # Note end point should look like this http://www.abc.com/api/
-          HD_SPLIT_EXPENSES_API: ${{ secrets.SPLIT_EXPENSES_API }}
+          # React app env values uses prefix REACT_APP otherwise app doesn't use the env value
+          HD_REACT_APP_SPLIT_EXPENSES_API: ${{ secrets.SPLIT_EXPENSES_API }}
