@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run cssx && react-scripts start",
-    "build": "npm run cssx && react-scripts build",
-    "test": "craco test",
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
     "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "eslint --ext .jsx,.js ./src",
     "lint:fix": "npm run lint -- --fix",
-    "cssx": "postcss src/styles/tailwind.css -o src/styles/main.css"
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
   "eslintConfig": {
     "plugins": [
@@ -46,7 +46,6 @@
     ]
   },
   "dependencies": {
-    "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
